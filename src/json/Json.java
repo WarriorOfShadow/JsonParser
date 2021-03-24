@@ -4,7 +4,7 @@ import json.element.base.Element;
 import json.element.exception.ElementException;
 import json.parser.all.ElemParser;
 
-public class Json {
+public class Json extends Element {
     private String jsonStr;
     private int index;
     private Element root;
@@ -51,5 +51,10 @@ public class Json {
         while (!atEnd() && (currentChar()==' ' || currentChar()=='\n')){
             indexMove();
         }
+    }
+
+    @Override
+    public String toString() {
+        return root.toString();
     }
 }

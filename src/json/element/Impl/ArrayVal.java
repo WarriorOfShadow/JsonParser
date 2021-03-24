@@ -10,6 +10,10 @@ public class ArrayVal extends Element {
 
     public ArrayVal() {}
 
+    public ArrayList<Element> getElemArray() {
+        return elemArray;
+    }
+
     @Override
     public Element at(int index) throws ElementException {
         return elemArray.get(index);
