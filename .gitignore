@@ -4,5 +4,6 @@
 # Datasource local storage ignored files
 /../../../../../:\code\IDEA_Projects\JsonParser\.idea/dataSources/
 /dataSources.local.xml
+/out/
 # Editor-based HTTP Client requests
 /httpRequests/
