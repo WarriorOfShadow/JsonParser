@@ -38,14 +38,13 @@ public class ObjectVal extends Element {
 
         boolean isFirst = true;
         for (String key : objMap.keySet()) {
-            if (isFirst){
-                isFirst=false;
-            }
-            else {
+            if (isFirst) {
+                isFirst = false;
+            } else {
                 sb.append(",\n");
             }
             sb.append(" ".repeat(Math.max(0, printDepth)));
-            sb.append(key).append(": ");
+            sb.append("\"").append(key).append("\"").append(": ");
             Element value = objMap.get(key);
             sb.append(value.toString());
         }

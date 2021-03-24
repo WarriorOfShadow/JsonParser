@@ -50,4 +50,11 @@ public class HelloWorld {
         }
         System.out.println(json);
     }
+
+    @Test
+    public void test3() throws IOException {
+        String jsonStr = getJsonStr("json/test3.json");
+        Json json = new Json(jsonStr);
+        System.out.println(json);
+    }
 }

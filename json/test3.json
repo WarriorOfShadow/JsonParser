@@ -1,0 +1,21 @@
+{
+  "numbers": [ 1, 2, 3 ],
+  "name": "mike",
+  "myData": [ true, false, "HelloWorld", 3.14, null ],
+  "subObj": {
+    "LiHua": 15,
+    "Jack": 13,
+    "Array": [
+      1,
+      2,
+      3,
+      4,
+      "hello",
+      "world",
+      true,
+      false,
+      {"age": 16}
+    ]
+  },
+  "小明": 15
+}
