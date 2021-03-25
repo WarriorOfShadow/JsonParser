@@ -9,6 +9,8 @@ public class ObjectParser extends Parser {
     @Override
     public Element parse(Json json) {
         ObjectVal objectVal = new ObjectVal();
+        // 跳过前缀“{”
+        json.indexMove();
         while (true){
             json.skipBlank();
             if (isTheEndOfVal(json.currentChar()))
@@ -35,7 +37,7 @@ public class ObjectParser extends Parser {
 
             objectVal.put(key, value);
         }
-        // 跳过结束符
+        // 跳过结束符“}”
         json.indexMove();
         return objectVal;
     }

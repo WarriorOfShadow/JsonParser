@@ -9,6 +9,8 @@ public class ArrayParser extends Parser {
     @Override
     public Element parse(Json json) {
         ArrayVal arrayVal = new ArrayVal();
+        // 跳过前缀‘]’
+        json.indexMove();
         while (true){
             json.skipBlank();
             if (isTheEndOfVal(json.currentChar()))

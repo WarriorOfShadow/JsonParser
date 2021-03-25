@@ -7,6 +7,8 @@ import json.element.base.Element;
 public class StringParser extends Parser {
     @Override
     public Element parse(Json json) {
+        // 跳过前缀 ‘"’
+        json.indexMove();
         String nextVal = getNextVal(json);
         // 跳过最后的 ‘"’
         json.indexMove();
